@@ -83,12 +83,15 @@ nav .container {
     /* background: black; */
 }
 nav img.logo {
-    width: 7rem;
+    width: 9rem;
 
 }
-nav img {
-    width: 9rem;
-    height: 8rem;
+nav .photo {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
 }
 nav .search-bar {
     background: #d1d0d4;
@@ -101,4 +104,101 @@ nav .search-bar {
     color: #86848c;
     position: absolute;
     left: 15%;
+}
+nav .search-bar input[type='search'] {
+    color: #27282f;
+    background: transparent;
+    width: 100%;
+}
+nav .search-bar input[type='search']::placeholder {
+    color: #56555e;
+}
+nav .profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+nav .profile-area .theme-btn {
+    display: flex;
+    background: #f0eff5;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+nav .profile-area .theme-btn span {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+nav .profile-area .theme-btn .active {
+    background: #27282f;
+    border-radius: 6px;
+    color: #fff;
+}
+nav .profile-area .profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+/* nav .profile-area .profile-photo {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+} */
+nav .profile-area button {
+    display: none;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 14rem auto 30rem;
+    gap: 2rem;
+    width: 96%;
+    margin: 1rem auto 4rem;
+}
+/* main section {
+    background: black;
+} */
+main aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88vh;
+}
+
+
+main aside button#close-btn {
+    display: none;
+}
+
+main aside .sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    height: 4.3rem;
+    color: #56555e;
+    position: relative;
+}
+main aside .sidebar a span {
+    font-size: 1.7rem;
+    margin: 3rem;
+}
+main aside .sidebar a.active {
+    background: #fff;
+    color: rgb(71, 7, 234);
+}
+main aside .sidebar a.active::before {
+    content: "";
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    background: rgb(71, 7, 234);
 }
