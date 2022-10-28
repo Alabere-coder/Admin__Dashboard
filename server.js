@@ -27,3 +27,5 @@ new Chart(chart, {
         responsive: true
     }
 })
+
+
